@@ -1,0 +1,38 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.5'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'ru.vorobyov'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+node {
+	download = true
+}
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.xerial:sqlite-jdbc:3.30.1'
+	implementation 'org.projectlombok:lombok'
+	implementation 'javax.xml.bind:jaxb-api'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas
+	implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '3.11'
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.5.6'
+
+
+
+
+}
+
+test {
+	useJUnitPlatform()
+}

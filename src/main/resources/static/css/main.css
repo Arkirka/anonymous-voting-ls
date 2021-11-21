@@ -1,0 +1,37 @@
+h3 {
+    text-align: center;
+    font-size:max(1em, min(4em, calc(100vw * 4 / 75)));
+    font-family: 'Arial',Arial,sans-serif;
+}
+
+input[type="text"] {
+    background-position: center center;
+    border-style: solid;
+    margin:0 25% 0 25%;
+    width:50%;
+    height: 150%;
+}
+
+input[type="button"] {
+    background-position: center center;
+    font-size: 120%;
+    margin:0 24% 0 25%;
+    margin-top: 1%;
+    width:51%; 
+    height:200%;
+    background: rgb(0, 0, 0); /* фон кнопки */
+    color: white; /* цвет текста */
+
+}
+
+input[type="checkbox"] {
+    background-position: center center;
+    font-size: 150%;
+    margin-left: 47%;
+    font-family: 'Arial',Arial,sans-serif;
+}
+
+#input_form{
+    margin:0 25% 0 25%;
+    width:50%;
+}
